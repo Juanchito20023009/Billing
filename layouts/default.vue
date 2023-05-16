@@ -80,7 +80,11 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire',
-        },
+        },        {
+          icon: 'mdi-chart-bubble',
+          title: 'SignIn',
+          to: '/SignIn'
+        }
       ],
       miniVariant: false,
       right: true,
