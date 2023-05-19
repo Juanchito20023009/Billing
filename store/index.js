@@ -1,6 +1,5 @@
 export const state = () => ({
-    user: {
-        name: '',
-        age: 0
+    userData:{
+        state: false
     }
 })
