@@ -3,3 +3,10 @@ export const state = () => ({
         state: false
     }
 })
+
+export const mutations = {
+    SET_USER(state, user){
+        console.log('-------',user)
+        state.userData= user
+    }
+}

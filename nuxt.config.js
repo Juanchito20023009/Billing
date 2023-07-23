@@ -24,7 +24,8 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -34,7 +35,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -46,11 +47,11 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: 'http://localhost:3001',
   },
 
   router: {
-    middleware: 'auth'
+    middleware: 'auth',
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
@@ -69,15 +70,15 @@ export default {
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
         },
-        light:{
+        light: {
           primary: '#0040a8',
           accent: '#ed3941',
           secondary: colors.red.darken2,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        }
+          success: colors.green.accent3,
+        },
       },
     },
   },
